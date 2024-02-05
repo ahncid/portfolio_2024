@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="icon" type="image/png" href="path/to/your/favicon.png" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -18,7 +20,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="/src/dark.js" defer></script>
     <script src="/src/scrollDown.js" defer></script>
-    <script src="/src/slideshow.js" defer></script>
     <link rel="stylesheet" href="/styles/style.css" />
     <title>Document</title>
   </head>
@@ -36,65 +37,67 @@
       </ul>
     </nav>
     <header>
-      <div class="around-image"><img src="/images/woman2.jpg" alt="" /></div>
-      <div class="info-box">
-        <p>Hello, I'm</p>
-        <h1>Søren Henriksen</h1>
-        <h2>Frontend Developer</h2>
-        <div class="buttons">
-          <a href="" class="cv">Download CV</a>
-          <a href="#contact" class="contact">Contact</a>
+      <div class="container">
+        <div class="around-image"><img src="/images/woman2.jpg" alt="" /></div>
+        <div class="info-box">
+          <p>Hello, I'm</p>
+          <h1>Søren Henriksen</h1>
+          <h2>Frontend Developer</h2>
+          <div class="buttons">
+            <a href="" class="cv">Download CV</a>
+            <a href="#contact" class="contact">Contact</a>
+          </div>
         </div>
       </div>
       <div class="scroll-down">
         <i class="fa-regular fa-circle-down"></i>
       </div>
+      <div class="stacks">
+        <p>Tech Stacks explored ⎪</p>
+        <div class="icon-container">
+          <i class="fa-brands fa-html5"></i>
+          <i class="fa-brands fa-css3-alt"></i>
+          <i class="fa-brands fa-js"></i>
+          <i class="fa-brands fa-node-js"></i>
+          <i class="fa-brands fa-react"></i>
+        </div>
+      </div>
     </header>
     <section id="about">
-      <div class="about"></div>
+      <img src="/images/office.png" alt="" />
+      <div class="about">
+        <div class="around-boxes">
+          <div class="box1">
+            <i class="fa-solid fa-user-graduate"></i>
+            <h3>Education & Experience</h3>
+            <p>Media College Viborg, Denmark</p>
+            <p>Exploring coding as a hobby</p>
+          </div>
+          <div class="box2">
+            <i class="fa-solid fa-rocket"></i>
+            <h3>Goals & Ambitions</h3>
+            <p>Learning & earning</p>
+            <p>To excel in web development</p>
+          </div>
+        </div>
+        <div class="about-me">
+          <p>
+            I'm on a journey to become a web developer, driven by a fascination
+            with coding and the beauty of interactive web design. My exploration
+            into AI, especially image generation, complements my passion for
+            crafting visually stunning websites. In the world of web development
+            and coding, I aim to learn and aspire to become better every day.
+          </p>
+        </div>
+      </div>
     </section>
     <section id="projects">
-      <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
-        <img
-          class="image"
-          src="https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-          draggable="false"
-        />
-        <img
-          class="image"
-          src="https://images.unsplash.com/photo-1610194352361-4c81a6a8967e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"
-          draggable="false"
-        />
-        <img
-          class="image"
-          src="https://images.unsplash.com/photo-1618202133208-2907bebba9e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-          draggable="false"
-        />
-        <img
-          class="image"
-          src="https://images.unsplash.com/photo-1495805442109-bf1cf975750b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-          draggable="false"
-        />
-        <img
-          class="image"
-          src="https://images.unsplash.com/photo-1548021682-1720ed403a5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-          draggable="false"
-        />
-        <img
-          class="image"
-          src="https://images.unsplash.com/photo-1496753480864-3e588e0269b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2134&q=80"
-          draggable="false"
-        />
-        <img
-          class="image"
-          src="https://images.unsplash.com/photo-1613346945084-35cccc812dd5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1759&q=80"
-          draggable="false"
-        />
-        <img
-          class="image"
-          src="https://images.unsplash.com/photo-1516681100942-77d8e7f9dd97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-          draggable="false"
-        />
+      <h2>Portfolio</h2>
+      <div class="project-container">
+        <div class="project1"><h4>Webshop</h4></div>
+        <div class="project2"><h4>Pokemon information</h4></div>
+        <div class="project3"><h4>React & Next.js</h4></div>
+        <div class="project4"><h4>??Food, health??</h4></div>
       </div>
     </section>
     <section id="contact"></section>

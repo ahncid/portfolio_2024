@@ -1,3 +1,5 @@
+document.documentElement.setAttribute("data-theme", "dark");
+
 document.getElementById("modeToggle").addEventListener("click", function () {
   const currentTheme = document.documentElement.getAttribute("data-theme");
   if (currentTheme === "dark") {
