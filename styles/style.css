@@ -17,19 +17,7 @@
   --text-color: #fff;
   --link-color: #fff;
 }
-:root {
-  --bg-color: #333;
-  --text-color: #fff;
-  --link-color: #fff;
-  --logo-color: #f1683a; /* Antager dette også skal være dark mode stil */
-}
 
-/* Light mode stil, aktiveret via data-theme="light" */
-[data-theme="light"] {
-  --bg-color: #fff;
-  --text-color: #000;
-  --link-color: #000;
-}
 html {
   font-size: 62.5%;
 }
@@ -224,8 +212,8 @@ header h2 {
   padding-top: 100px;
 }
 #about img {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   border-radius: 25px;
 }
 .about {
@@ -292,4 +280,14 @@ h3 {
   font-size: 3.2rem;
   text-shadow: 0 5px 10px #0004;
   letter-spacing: -2px;
+}
+
+.project1,
+.project2,
+.project3,
+.project4 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
 }
