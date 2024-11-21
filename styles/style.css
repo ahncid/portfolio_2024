@@ -291,3 +291,15 @@ h3 {
   flex-direction: column;
   width: 50%;
 }
+
+footer {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+ justify-content: flex-end;
+}
+
+footer p {
+  padding: 15px;
+
+}

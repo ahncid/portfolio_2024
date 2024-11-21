@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.scrollTo({
       top: nextPageY,
-      behavior: "smooth", //
+      behavior: "smooth", 
     });
 
     currentScrollPosition = nextPageY;
