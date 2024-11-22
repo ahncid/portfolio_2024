@@ -12,36 +12,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Square+Peg&display=swap"
       rel="stylesheet"
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="/src/dark.js" defer></script>
-    <script src="/src/scrollDown.js" defer></script>
+    <script src="/src/nav.js" defer></script>
+    <script src="/src/box-animation.js" defer></script>
     <link rel="stylesheet" href="/styles/style.css" />
-    <link rel="stylesheet" href="styles/carousel.css" />
     <title>Document</title>
   </head>
   <body>
-    <nav>
-      <a class="logo" href="">Søren Jung Henriksen</a>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-
-        <button id="modeToggle">
-          <i class="fa-solid fa-circle-half-stroke"></i>
-        </button>
-      </ul>
-    </nav>
+    <div class="navigation-container">
+      <a class="logo" href="">jung.</a>
+      <nav class="navigation">
+        <div class="ellipsis">
+          <div id="dot"></div>
+          <div id="dot"></div>
+          <div id="dot"></div>
+        </div>
+        <ul class="nav-icons">
+          <li data-href="onepage.html"><i class="fas fa-home"></i></li>
+          <li data-href="artikel.html">
+            <i class="fa-solid fa-newspaper"></i>
+          </li>
+          <li
+            data-href="https://aidenmark.dk/hvad-er-ai-og-hvad-kan-det-bruges-til"
+            target="_blank"
+          >
+            <i class="fa-solid fa-door-open"></i>
+          </li>
+          <li data-href="https://www.jair.org/index.php/jair" target="_blank">
+            <i class="fa-solid fa-atom"></i>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <header>
-      <div class="container">
-        <div class="around-image"><img src="/images/woman2.jpg" alt="" /></div>
+      <div class="header-container">
+        <div class="around-image"><img src="/images/mee.png" alt="" /></div>
         <div class="info-box">
-          <p>Hello, I'm</p>
-          <h1>Søren Henriksen</h1>
+          <p>Hello, I'm Søren</p>
+          <h1>Web Designer</h1>
           <h2>Frontend Developer</h2>
           <div class="buttons">
             <a href="" class="cv">Download CV</a>
@@ -49,11 +61,10 @@
           </div>
         </div>
       </div>
-      <div class="scroll-down">
-        <i class="fa-regular fa-circle-down"></i>
-      </div>
+
       <div class="stacks">
-        <p>Tech Stacks explored ⎪</p>
+        <p>Tech Stacks explored</p>
+        <div class="tech-line">⎪</div>
         <div class="icon-container">
           <i class="fa-brands fa-html5"></i>
           <i class="fa-brands fa-css3-alt"></i>
@@ -64,43 +75,171 @@
       </div>
     </header>
     <section id="about">
-      <img src="/images/office.png" alt="" />
-      <div class="about">
-        <div class="around-boxes">
-          <div class="box1">
-            <i class="fa-solid fa-user-graduate"></i>
-            <h3>Education & Experience</h3>
-            <p>Media College Viborg, Denmark</p>
+      <div class="around-boxes">
+        <div class="box1 box" data-animate="true">
+          <div class="inside-box">
+            <h3 class="box-number">01</h3>
+            <h6>Education & Experience</h6>
+          </div>
+          <div class="text-box">
+            <p>Webdeveloper, Media College Viborg</p>
             <p>Exploring coding as a hobby</p>
+            <p>Some experience with Git, React & REST API-design</p>
+            <p>Power BI courses</p>
           </div>
-          <div class="box2">
-            <i class="fa-solid fa-rocket"></i>
-            <h3>Goals & Ambitions</h3>
-            <p>Learning & earning</p>
+        </div>
+        <div class="box2 box" data-animate="true">
+          <div class="inside-box">
+            <h3 class="box-number">02</h3>
+            <h6>Goals & Ambitions</h6>
+          </div>
+          <div class="text-box">
             <p>To excel in web development</p>
+            <p>Become a full-stack developer</p>
+            <p>To improve my problem-solving skills through coding</p>
+            <p>Learning Python for automation and exploring AI development</p>
           </div>
         </div>
-        <div class="about-me">
-          <p>
-            I'm on a journey to become a web developer, driven by a fascination
-            with coding and the beauty of interactive web design. My exploration
-            into AI, especially image generation, complements my passion for
-            crafting visually stunning websites. In the world of web development
-            and coding, I aim to learn and aspire to become better every day.
-          </p>
+        <div class="box3 box" data-animate="true">
+          <div class="inside-box">
+            <h3 class="box-number">03</h3>
+            <h6>Personal Interests</h6>
+          </div>
+          <div class="text-box">
+            <p>Exploring AI for coding and art generation</p>
+            <p>Gaming enthusiast, especially FPS</p>
+            <p>Enjoys learning about smart investment strategies and trends</p>
+            <p>
+              Balances time between socializing with friends and enjoying
+              solitude
+            </p>
+          </div>
         </div>
       </div>
     </section>
-    <section id="projects">
-      <h2>Portfolio</h2>
-      <div class="project-container">
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
+    <section class="work-section">
+      <div class="work-container">
+        <i class="circle circle-arrow fa-solid fa-arrow-down"></i>
+        <div class="line"></div>
+        <div class="circle circle-1">01</div>
+        <div class="project project-1 box" data-animate="true">
+          <div class="time-box"><p>3 to 4 days</p></div>
+          <div class="project-1-headline">
+            <p class="before-project-name">Booking Website</p>
+            <p class="project-name">Gittes Glamping</p>
+          </div>
+
+          <ul class="learned">
+            <li>
+              The project focused on improving my React skills, integrating
+              routing, and building reusable components.
+            </li>
+            <li>
+              I also gained experience using Vite for fast development and
+              deployment
+            </li>
+            <li>
+              Integrated Fetch API to dynamically retrieve reviews and
+              activities data from a backend
+            </li>
+            <li>
+              Learned how to manage state to display real-time data for user
+              experience
+            </li>
+          </ul>
+          <div class="project-1-end">
+            <p class="framework">React + Vite</p>
+            <a
+              class="circle-link-1 circle-link"
+              href="https://ahncid.github.io/glamping_client/"
+              target="_blank"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="circle circle-2">02</div>
+        <div class="project project-2 box" data-animate="true">
+          <div class="time-box"><p>2 to 3 days</p></div>
+          <div class="project-2-headline">
+            <p class="before-project-name-2">Exploring AI</p>
+            <p class="project-name-2">Fremtid Frontend</p>
+          </div>
+
+          <ul class="learned-2">
+            <li>
+              Focused on creating a clean and intuitive structure to make
+              content easily accessible for users
+            </li>
+
+            <li>Integrated external articles and structured presentation</li>
+            <li>
+              Authored a detailed article about AI and its potential in shaping
+              future technology
+            </li>
+            <li>
+              Currently, the site is not responsive but is planned to be adapted
+              for mobile and tablet devices in the future
+            </li>
+          </ul>
+          <div class="project-2-end">
+            <p class="framework">Vanilla</p>
+            <a
+              class="circle-link-2 circle-link"
+              href="https://ahncid.github.io/fremtid-frontend/"
+              target="_blank"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="circle circle-3">03</div>
+        <div class="project project-3 box" data-animate="true">
+          <div class="time-box"><p>4 days</p></div>
+          <div class="project-3-headline">
+            <p class="before-project-name-3">Pizza Ordering System</p>
+            <p class="project-name-3">Den Glade Skorpe</p>
+          </div>
+
+          <ul class="learned-3">
+            <li>
+              Developed using React and Vite for a fast, interactive user
+              experience.
+            </li>
+            <li>
+              Implemented categorization for pizzas, durum, and baked pizzas
+              with filtering functionality.
+            </li>
+            <li>
+              Built a backoffice with CRUD functionality for managing products
+              and staff.
+            </li>
+            <li>
+              Secured backoffice access with JWT-based login authentication.
+            </li>
+          </ul>
+          <div class="project-3-end">
+            <p class="framework">React + Vite</p>
+            <a
+              class="circle-link-3 circle-link"
+              href="https://ahncid.github.io/denGladeskorpe_live/"
+              target="_blank"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
       </div>
     </section>
-    <section id="contact"></section>
+
+    <section id="contact">
+      <div class="socials-box box" data-animate="true">
+        <div><i class="fa-brands fa-square-github"></i></div>
+        <div><i class="fa-brands fa-linkedin"></i></div>
+        <div><i class="fa-brands fa-square-facebook"></i></div>
+        <div><i class="fa-solid fa-envelope"></i></div>
+        <div><i class="fa-solid fa-square-phone"></i></div>
+      </div>
+    </section>
     <footer>
       <p>© 2023 by Søren Jung Henriksen</p>
     </footer>
