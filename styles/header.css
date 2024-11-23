@@ -1,0 +1,234 @@
+.navigation-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-left: 370px;
+  margin: 0 auto;
+}
+.navigation {
+  position: fixed;
+  display: inline-block;
+  right: 50px;
+  z-index: 101;
+  top: 50px;
+}
+#dot {
+  background-color: var(--logo-color);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+.ellipsis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border: 1px solid var(--logo-color);
+  border-radius: 50%;
+  padding: 10px;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  z-index: 100;
+  transition: all 0.4s ease-in-out;
+}
+.ellipsis:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  border: 5px solid #282828;
+  transform: rotate(90deg);
+}
+
+.ellipsis.active {
+  gap: 4px;
+  border: 5px solid #8c7f6d;
+}
+.nav-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  list-style: none;
+  padding: 0;
+  visibility: visible;
+  margin: 0 auto;
+}
+
+.nav-icons.active {
+  visibility: visible;
+}
+
+.nav-icons li {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  font-size: 2rem;
+  transition: transform 0.5s ease-in-out, opacity 0.8s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-icons.active li:nth-child(1) {
+  transform: translate(0%, -150%);
+  opacity: 1;
+}
+
+.nav-icons.active li:nth-child(2) {
+  transform: translate(150%, 0%);
+  opacity: 1;
+}
+
+.nav-icons.active li:nth-child(3) {
+  transform: translate(0%, 150%);
+  opacity: 1;
+}
+
+.nav-icons.active li:nth-child(4) {
+  transform: translate(-150%, 0%);
+  opacity: 1;
+}
+.logo {
+  font-weight: bold;
+  color: var(--logo-color);
+  letter-spacing: -1px;
+  text-decoration: none;
+  font-size: 3.6rem;
+}
+.logo:hover {
+  color: var(--text-color);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1140px;
+  height: 80vh;
+  gap: 27px;
+  border-bottom: 2px solid #3d2e2e;
+}
+
+header img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+.around-image {
+  display: flex;
+}
+
+header p {
+  font-size: 1.6rem;
+  text-shadow: 0 5px 10px #0004;
+  letter-spacing: -0.5px;
+}
+header h1 {
+  font-size: 4.8rem;
+  text-shadow: 0 5px 10px #0004;
+  margin: 0 auto;
+  letter-spacing: -2px;
+}
+header h2 {
+  color: #8c7f6d;
+  font-size: 3.2rem;
+  text-shadow: 0 5px 10px #0004;
+  margin: 0 auto;
+  letter-spacing: -2px;
+}
+.header-container {
+  display: flex;
+}
+.info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  letter-spacing: 1.5px;
+  line-height: 40px;
+}
+
+.buttons {
+  margin: 30px auto;
+}
+.buttons a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--link-color);
+  background-image: linear-gradient(to top, #8c7f6d, #8c7f6d);
+  background-size: 100% 0%;
+  background-repeat: no-repeat;
+  background-position: left 100%;
+  transition: background-size 0.7s, background-position 0s 0.7s;
+  font-size: 1.6rem;
+  padding: 10px 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+.buttons a:hover {
+  background-size: 100% 100%;
+  background-position: left 0%;
+}
+
+.stacks {
+  display: flex;
+  width: 1140px;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+.stacks p {
+  font-size: 2rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.tech-line {
+  font-size: 3rem;
+  position: relative;
+  left: 13px;
+}
+
+.icon-container {
+  display: flex;
+  gap: 50px;
+  max-width: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.icon-container i {
+  font-size: 4rem;
+  animation: scroll 7s linear infinite;
+}
+
+.fa-html5 {
+  color: #e34f26;
+}
+.fa-css3-alt {
+  color: #1572b6;
+}
+.fa-js {
+  color: #f0db4f;
+}
+.fa-node-js {
+  color: #339933;
+}
+.fa-react {
+  color: #61dbfb;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(1000%);
+  }
+  100% {
+    transform: translateX(-1000%);
+  }
+}

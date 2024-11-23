@@ -1,0 +1,167 @@
+.contact-form-spree {
+  background-color: var(--background-color);
+  width: 40%;
+  border: 1px solid var(--border-color);
+  height: 450px;
+}
+
+.inner-contact {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  padding: 15px;
+  min-height: 100%;
+}
+.inner-contact h5 {
+  font-size: 3rem;
+  color: var(--logo-color);
+  font-family: "Satoshi-Light";
+  font-weight: 400;
+  font-style: normal;
+}
+.inner-contact p {
+  font-size: 4rem;
+  font-weight: 100;
+  color: var(--border-color);
+}
+
+.inner-contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+}
+.inner-contact form label input {
+  width: 100%;
+  background-color: var(--bg-color);
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  color: var(--text-color);
+}
+.inner-contact form label input::placeholder {
+  color: var(--border-color);
+  padding-left: 10px;
+  font-size: 1.4rem;
+}
+.inner-contact form label textarea::placeholder {
+  color: var(--border-color);
+  padding: 10px;
+  font-size: 1.4rem;
+}
+.inner-contact form label input:focus {
+  outline: none;
+  border: none;
+}
+.inner-contact form label textarea:focus {
+  outline: none;
+  border: none;
+}
+.inner-contact form label input,
+.inner-contact form label input:focus {
+  padding: 10px;
+}
+.inner-contact form label textarea,
+.inner-contact form label textarea:focus {
+  padding: 10px;
+}
+
+.inner-contact form label textarea {
+  width: 100%;
+  background-color: var(--bg-color);
+  height: 75px;
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--border-color) !important;
+  -webkit-text-fill-color: var(--text-color) !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input:autofill,
+textarea:autofill {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+
+#contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  max-width: 100%;
+  margin: 250px auto;
+  width: 100%;
+}
+#thankYouMessage {
+  margin-top: 75px;
+}
+
+.contact-line-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding-top: 100px;
+  margin: 0 auto;
+  margin-bottom: -150px;
+  gap: 15px;
+}
+
+.contact-button {
+  background-color: var(--border-color);
+  border: none;
+  height: 50px;
+  border-radius: 5px;
+  color: var(--text-color);
+  font-size: 1.6rem;
+}
+.socials-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.socials-box i:first-child {
+  font-size: 4rem;
+}
+.socials-box i {
+  font-size: 2rem;
+}
+.socials-box a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.socials-box div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--background-color);
+  height: 50px;
+  width: 50px;
+  border: 1px solid var(--border-color);
+}
+
+.soMe-1.visible {
+  transition-delay: 0s;
+}
+
+.soMe-2.visible {
+  transition-delay: 0.2s;
+}
+
+.soMe-3.visible {
+  transition-delay: 0.4s;
+}
+.soMe-4.visible {
+  transition-delay: 0.8s;
+}
+.soMe-5.visible {
+  transition-delay: 1.2s;
+}
