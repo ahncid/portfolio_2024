@@ -19,12 +19,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="/src/nav.js" defer></script>
     <script src="/src/box-animation.js" defer></script>
+    <script src="/src/form.js" defer></script>
     <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/satoshi.css" />
+    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/about.css" />
+    <link rel="stylesheet" href="/styles/work.css" />
+    <link rel="stylesheet" href="/styles/contact.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="navigation-container">
-      <a class="logo" href="">jung.</a>
+      <a class="logo" href="#">jung.</a>
       <nav class="navigation">
         <div class="ellipsis">
           <div id="dot"></div>
@@ -32,18 +38,15 @@
           <div id="dot"></div>
         </div>
         <ul class="nav-icons">
-          <li data-href="onepage.html"><i class="fas fa-home"></i></li>
-          <li data-href="artikel.html">
-            <i class="fa-solid fa-newspaper"></i>
+          <li data-href="/"><i class="fas fa-home"></i></li>
+          <li data-href="#contact">
+            <i class="fa-solid fa-address-card"></i>
           </li>
-          <li
-            data-href="https://aidenmark.dk/hvad-er-ai-og-hvad-kan-det-bruges-til"
-            target="_blank"
-          >
-            <i class="fa-solid fa-door-open"></i>
+          <li data-href="#work" target="_blank">
+            <i class="fa-solid fa-code"></i>
           </li>
-          <li data-href="https://www.jair.org/index.php/jair" target="_blank">
-            <i class="fa-solid fa-atom"></i>
+          <li data-href="#about" target="_blank">
+            <i class="fa-solid fa-info"></i>
           </li>
         </ul>
       </nav>
@@ -117,7 +120,7 @@
         </div>
       </div>
     </section>
-    <section class="work-section">
+    <section id="work" class="work-section">
       <div class="work-container">
         <i class="circle circle-arrow fa-solid fa-arrow-down"></i>
         <div class="line"></div>
@@ -128,7 +131,11 @@
             <p class="before-project-name">Booking Website</p>
             <p class="project-name">Gittes Glamping</p>
           </div>
-
+          <h6>
+            A school project where I built a booking website using React and
+            Vite. The site dynamically fetches customer reviews and activities
+            via a backend
+          </h6>
           <ul class="learned">
             <li>
               The project focused on improving my React skills, integrating
@@ -165,7 +172,10 @@
             <p class="before-project-name-2">Exploring AI</p>
             <p class="project-name-2">Fremtid Frontend</p>
           </div>
-
+          <h6>
+            A school project exploring the future of AI through a Vanilla
+            JavaScript website. It features external and self-written articles
+          </h6>
           <ul class="learned-2">
             <li>
               Focused on creating a clean and intuitive structure to make
@@ -200,7 +210,11 @@
             <p class="before-project-name-3">Pizza Ordering System</p>
             <p class="project-name-3">Den Glade Skorpe</p>
           </div>
-
+          <h6>
+            Another school project: Pizza ordering system built with React and
+            Vite. It includes product categorization, a shopping cart, and a
+            secure backoffice for CRUD operations with JWT authentication
+          </h6>
           <ul class="learned-3">
             <li>
               Developed using React and Vite for a fast, interactive user
@@ -230,18 +244,75 @@
         </div>
       </div>
     </section>
+    <div class="contact-line-container">
+      <div class="contact-line"></div>
 
+      <div class="contact-line"></div>
+    </div>
     <section id="contact">
-      <div class="socials-box box" data-animate="true">
-        <div><i class="fa-brands fa-square-github"></i></div>
-        <div><i class="fa-brands fa-linkedin"></i></div>
-        <div><i class="fa-brands fa-square-facebook"></i></div>
-        <div><i class="fa-solid fa-envelope"></i></div>
-        <div><i class="fa-solid fa-square-phone"></i></div>
+      <div class="contact-form-spree box" data-animate="true">
+        <div class="inner-contact">
+          <h5>contact</h5>
+          <p>let's get in touch</p>
+          <form
+            id="contactForm"
+            action="https://formspree.io/f/myzydyyr"
+            method="POST"
+          >
+            <label>
+              <input type="text" name="name" placeholder="Name" required />
+            </label>
+            <label>
+              <input type="email" name="email" placeholder="Email" required />
+            </label>
+            <label>
+              <textarea
+                name="message"
+                placeholder="Message"
+                required
+              ></textarea>
+            </label>
+            <button class="contact-button" type="submit">Send message</button>
+          </form>
+          <div id="thankYouMessage" style="display: none">
+            <p>Thank you for your message! I will get back to you soon.</p>
+          </div>
+        </div>
+      </div>
+      <div class="socials-box" data-animate="true">
+        <div class="soMe-1 box" data-animate="true">
+          <a href="https://github.com/ahncid" target="_blank">
+            <i class="fa-brands fa-square-github"></i
+          ></a>
+        </div>
+        <div class="soMe-2 box" data-animate="true">
+          <a
+            href="https://www.linkedin.com/in/s%C3%B8ren-henriksen/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+        <div class="soMe-3 box" data-animate="true">
+          <a href="https://www.facebook.com/sorenjh/" target="_blank"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+        </div>
+        <div class="soMe-4 box" data-animate="true">
+          <a href="mailto:ahncid@gmail.com" title="send me an email">
+            <i class="fa-solid fa-square-envelope"></i
+          ></a>
+        </div>
+        <div class="soMe-5 box" data-animate="true">
+          <a href="tel:+4542927842" title="call me">
+            <i class="fa-solid fa-square-phone"></i
+          ></a>
+        </div>
       </div>
     </section>
     <footer>
-      <p>© 2023 by Søren Jung Henriksen</p>
+      <p>jung.</p>
+      <p>© 2024 by Søren Jung Henriksen</p>
     </footer>
   </body>
 </html>

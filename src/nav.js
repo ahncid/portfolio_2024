@@ -18,3 +18,12 @@ window.addEventListener("scroll", function () {
     ellipsis.classList.remove("active");
   }
 });
+
+document.querySelectorAll(".nav-icons li").forEach((item) => {
+  item.addEventListener("click", () => {
+    const href = item.getAttribute("data-href");
+    if (href) {
+      window.location.href = href; // Navigér til href
+    }
+  });
+});
