@@ -165,3 +165,23 @@ textarea:autofill {
 .soMe-5.visible {
   transition-delay: 1.2s;
 }
+
+@media (max-width: 768px) {
+  #contact {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .contact-form-spree {
+    width: 600px;
+  }
+  .socials-box {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form-spree {
+    width: 350px;
+  }
+}

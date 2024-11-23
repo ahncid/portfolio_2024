@@ -1,6 +1,8 @@
 #about {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   max-width: 100%;
   margin: 0 auto;
   padding-top: 250px;
@@ -72,4 +74,33 @@
   font-family: "Satoshi-Light";
   font-weight: 400;
   font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .around-boxes {
+    flex-direction: column;
+    width: 100%;
+    gap: 25px;
+  }
+
+  .box1,
+  .box2,
+  .box3 {
+    width: 600px;
+  }
+}
+@media (max-width: 480px) {
+  .around-boxes {
+    margin-top: -70px;
+    margin: 0 auto;
+  }
+  .box1,
+  .box2,
+  .box3 {
+    width: 350px;
+    margin: 0 auto;
+  }
+  .box1 .inside-box h6 {
+    font-size: 2.8rem;
+  }
 }

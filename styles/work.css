@@ -22,6 +22,13 @@
   width: 2px;
   height: 350px;
 }
+.first-line {
+  position: relative;
+  left: 50%;
+  background-color: #3d2e2e;
+  width: 2px;
+  height: 350px;
+}
 .fa-arrow-down {
   font-size: 1.6rem;
   color: var(--logo-color);
@@ -264,4 +271,103 @@
 
 .project3.visible {
   transition-delay: 0.6s;
+}
+
+@media (max-width: 768px) {
+  .work-section {
+    width: 768px;
+  }
+  .first-line {
+    left: 25px;
+  }
+  .line {
+    left: 25px;
+    height: 450px;
+  }
+  .circle {
+    left: 5px;
+
+    margin: 5px;
+  }
+  .project-1 {
+    left: 100px;
+    top: 15%;
+  }
+  .project-2 {
+    right: 116px;
+    top: 50%;
+  }
+  .project-3 {
+    left: 100px;
+    top: 85%;
+  }
+}
+@media (max-width: 480px) {
+  .work-section {
+    width: 480px;
+  }
+  .project {
+    width: 300px;
+    height: 350px;
+  }
+  .project h6 {
+    font-size: 1.4rem;
+  }
+  .circle {
+    left: 5px;
+
+    margin: 5px;
+  }
+  .project-1 {
+    left: 20%;
+    top: 15%;
+  }
+  .project-2 {
+    right: 5%;
+    top: 50%;
+  }
+  .project-3 {
+    left: 20%;
+    top: 85%;
+  }
+  .learned li {
+    font-size: 1.1rem;
+  }
+  .learned-2 li {
+    font-size: 1.1rem;
+  }
+  .learned-3 li {
+    font-size: 1.1rem;
+  }
+  .before-project-name {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+  .before-project-name-2 {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+  .before-project-name-3 {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+  .project-name {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+  .project-name-2 {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+  .project-name-3 {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+  .framework {
+    font-size: 1.6rem;
+  }
+  .circle-link i {
+    font-size: 1.4rem;
+    margin-top: 0px;
+  }
 }

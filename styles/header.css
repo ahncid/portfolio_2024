@@ -232,3 +232,58 @@ header h2 {
     transform: translateX(-1000%);
   }
 }
+
+@media (max-width: 768px) {
+  header {
+    max-width: 768px;
+  }
+  header p {
+    margin: 0 auto;
+  }
+  .stacks {
+    margin-left: -150px;
+  }
+  .stacks p {
+    margin-right: -20px;
+  }
+  .header-container {
+    flex-direction: column;
+  }
+  .navigation-container {
+    padding-left: 15px;
+  }
+  .navigation {
+    display: none;
+  }
+  .stacks {
+    width: 100%;
+  }
+
+  header img {
+    height: 400px;
+    width: 400px;
+  }
+  .logo {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    flex-direction: column;
+  }
+  .logo {
+    margin-top: -35px;
+  }
+  header {
+    height: 110vh;
+  }
+  .stacks {
+    margin: 0 auto;
+    padding-left: 10px;
+  }
+  .stacks p {
+    font-size: 1.6rem;
+    margin-left: 35px;
+  }
+}
